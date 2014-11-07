@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Dust.JS Templeting</title>
+	<script type="text/javascript" src="dust-full.js"></script>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="template-js-saya.js"></script>
+</head>
+<body>
+	<script id="dustjs-templeting">
+		<h3>{judul}</h3>
+		<ul>
+			{#makanans}
+			<li>{makanan}</li>{~n}
+			{/makanans}
+		</ul>
+		<ul>
+			{#minumans}
+			<li>{minuman}</li>{~n}
+			{/minumans}
+		</ul>
+	</script>
+	<div id="output"></div>
+</body>
+</html>
